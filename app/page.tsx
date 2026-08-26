@@ -1,15 +1,21 @@
+import Navbar from "@/components/Navbar";
+import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-5xl font-bold">
-          Hi, I'm Wannur.
-        </h1>
-
-        <p className="mt-4 text-lg text-gray-600">
-          UI/UX Designer & Front-End Developer
-        </p>
-      </div>
+    <main className="min-h-screen bg-white text-black">
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </main>
   );
 }
